@@ -1,0 +1,48 @@
+.lineChart {
+    background-color: $red-20;
+    border-radius: 5px;
+    position: relative;
+
+    .recharts-legend-wrapper {
+        font-weight: 500!important;
+        font-size: 15px!important;
+        color: rgba($white, 0.7);
+        line-height: 24px;
+        max-width: 145px;
+        left: 34px!important;
+        top: 29px!important;
+    }
+
+    .recharts-text {
+        opacity: 0.7;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .tooltipChart {
+        background-color: $white;
+        padding: 10px 7px;
+
+        .tooltipLineChart {
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+.recharts-layer .recharts-cartesian-axis-tick line {
+    display: none;
+}
+
+.recharts-text .recharts-cartesian-axis-tick-value {
+    opacity: 0.5;
+}
+
+
+.recharts-cartesian-axis-line {
+    display: none;
+}
+
+.recharts-cartesian-grid-vertical {
+    display: none;
+}

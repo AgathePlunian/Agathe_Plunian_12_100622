@@ -1,0 +1,36 @@
+.main-nav-container {
+    background-color: $primary;
+    box-shadow: 0px 4px 4px rgba(black, 25%);
+    height: 91px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 68px;
+
+    .container {
+        width: 100%;
+    }
+}
+
+.nav-list{
+    margin-bottom: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    height: 100%;
+    width: 100%;
+    
+    .logo-container {
+        max-width: 178px;
+    }
+
+    .nav-link {
+        display: block;
+        text-decoration: none;
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+}

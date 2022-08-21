@@ -1,0 +1,14 @@
+.radarChart {
+    background-color: $dark-grey;
+    border-radius: 5px;
+
+    .recharts-layer .recharts-polar-angle-axis-tick text{
+        font-size: 12px!important; 
+    }
+
+    .recharts-polar-grid-angle {
+        line {
+            display: none;
+        }
+    }
+}

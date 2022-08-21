@@ -1,0 +1,37 @@
+.main-dashboard {
+    .container-lg {
+        padding-left: 150px;
+        padding-bottom: 86px;
+        margin: 0 auto;
+    }
+}
+
+
+.datas-container {
+    display: flex;
+    width: 100%;
+
+    .aside-datas {
+        width: 29.18%;
+        padding: 0 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+}
+
+.charts-container {
+    width: 70.82%; 
+}
+
+.charts-row {
+    display: flex;
+    flex-flow: row ;
+    margin: 0 -15px;
+
+    .col-card {
+        width:calc(100% / 3 - 30px);
+        margin: 0 15px;
+        min-height: 275px;
+    }
+}

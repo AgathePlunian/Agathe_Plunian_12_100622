@@ -1,0 +1,17 @@
+@import "./utils/variables.scss";
+@import "./utils/mixin.scss";
+@import "./utils/commons.scss";
+
+//Components
+@import "./components/header.scss";
+@import "./components/asideBar.scss";
+@import "./components/helloUser.scss";
+@import "./components/dataCard.scss";
+@import "./components/barChart.scss";
+@import "./components/lineChart.scss";
+@import "./components/radarChart.scss";
+@import "./components/pieChart.scss";
+@import "./components/errorMessage.scss";
+
+//Page
+@import "./pages/dashboard.scss";

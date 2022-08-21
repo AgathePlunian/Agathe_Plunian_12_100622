@@ -1,0 +1,85 @@
+.chart-activity {
+    border-radius: 5px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: $light-grey;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 70px;
+
+    .tooltipChart {
+        background-color: $red-10!important;
+        border: none!important;
+        color: $white;
+        font-size: 10px;
+        font-weight: 500;
+        min-width: 40px;
+        padding: 10px!important;
+
+        .tooltipLineChart:first-child {
+            margin-bottom: 15px;
+        }
+        .recharts-tooltip-label {
+            display: none;
+        }    
+    }
+
+    .legend-list {
+        display: flex;
+        position: absolute;
+        top: -6px;
+        right: 26px;
+
+        .legend-item {
+            color: $grey-10;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                left: 0;
+                top: 3px;
+                position: absolute;
+                content: ' ';
+                width: 8px;
+                height: 8px;
+                background-color: #282D30;
+                border-radius: 50%;
+            }
+
+            &:last-child {
+                &::before {
+                    background-color:$red-10;
+                }
+              
+            }
+            +.legend-item {
+                margin-left: 32px;
+            }
+        }
+    }
+
+    .recharts-text tspan {
+        font-size:14px ;
+        font-weight: 500;
+    }
+
+    .recharts-default-legend {
+        margin-bottom: 20px;
+ 
+        
+    }
+    .chart-title {
+        margin-bottom: 34px;
+        position: absolute;
+        top: 24px;
+        left: 32px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .recharts-legend-wrapper {
+        top: -40px!important;
+    }
+}

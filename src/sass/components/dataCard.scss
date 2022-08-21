@@ -1,0 +1,61 @@
+.keydata-list {
+    background-color: $light-grey;
+    border-radius: 5px;
+    padding: 32px;
+    
+    +.keydata-list {
+        margin-top: 39px;
+        display: flex;
+    }
+
+    .keydata-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .keydata-value {
+        font-size: 20px;
+        font-weight: 700;
+        color: $black-10;
+        margin-bottom: 10px;
+    }
+
+    .keydata-name {
+        font-size: 14px;
+        font-weight: 400;
+        color: $grey-10;
+    }
+
+    .keydata-img {
+        margin-right: 24px;
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.item-Calories {
+            background-color: rgba(#FF0000, 7%);
+        }
+
+        &.item-Proteines {
+            background-color: rgba(#4AB8FF, 10%);
+        }
+
+        &.item-Glucides {
+            background-color: rgba(#F9CE23, 10%);
+        }
+
+        &.item-Lipides {
+            background-color: rgba(#FD5181, 10%);
+        }
+
+        img {
+            width: 18px;
+            min-width: 18px;
+            height: 18px;
+        }
+    }
+}
