@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 function HelloUser({result}) {
     return (
         <div className="dashboard-header">
-        <h1 className="hello-user-title">Bonjour  <span className="username">{result.result.data.userInfos.firstName}</span> </h1> 
+        <h1 className="hello-user-title">Bonjour <span className="username">{result.data.userInfos.firstName}</span> </h1> 
             <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
         </div>   
     )

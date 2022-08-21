@@ -3,8 +3,8 @@ import { Legend, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Responsi
 import PropTypes from 'prop-types'
 
 /**
- * Render Line Chart
- * @param {Object} value
+ * LineChart construction with recharts components
+ * @param {Object} data
  * @returns {ReactElement}
  */
 
@@ -43,7 +43,6 @@ import PropTypes from 'prop-types'
         right: 10,
         left: -50,
         bottom: 0,
-
       }}
     >
       <CartesianGrid width={0} />

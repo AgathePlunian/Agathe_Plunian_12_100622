@@ -11,8 +11,8 @@ import AsideBar from './components/AsideBar';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 
-    <BrowserRouter>
-    <Header></Header>
+  <BrowserRouter>
+    <Header/>
     <AsideBar/>
     <Routes>
       <Route path="/user/:id" element={<Dashboard/>}></Route>

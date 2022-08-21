@@ -3,14 +3,12 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 import PropTypes from 'prop-types'
 
 /**
- * Render bar chart 
+ * BarChart construction with recharts components
  * @param {object} value
  * @returns {ReactElement}
  */
 
 function BarChartActivities({result}) {
-
-
  //Custom tooltip
   function CustomTooltip({ payload, active }) {
     const tool2 = (payload, active) => {
@@ -41,8 +39,7 @@ function BarChartActivities({result}) {
   let formatXAxis = (tickItem) => {
     let date = new Date(tickItem);
     let day = date.getDate(); 
-    let month = date.getMonth();  
-    return ((day < 10) ?  day.toString() : day.toString() + "/" + (month < 10) ? '0' + month.toString() : month.toString());
+    return day.toString() 
   }
 
   return (
@@ -70,7 +67,7 @@ function BarChartActivities({result}) {
 }
 
 BarChartActivities.propTypes  = {
-    result: PropTypes.object.isRequired,
+    result: PropTypes.object,
 };
     
 export default BarChartActivities;

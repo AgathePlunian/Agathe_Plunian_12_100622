@@ -3,8 +3,8 @@ import { PieChart, Pie, Cell } from "recharts";
 import PropTypes from 'prop-types'
 
 /**
- * Render Pie Chart
- * @param {Object} value
+ * PieChart construction with recharts components
+ * @param {Object} data
  * @returns {ReactElement}
  */
 
@@ -36,7 +36,7 @@ return (
         <h2 className='pie-chart-title'>Score</h2>
         <p className='score-text'><span className='score-number'>{newScore} %</span>de votre objectif</p>
         
-            <PieChart  width={200} height={200}>
+            <PieChart width={200} height={200}>
                 <Pie
                 cornerRadius={40}
                 data={data}

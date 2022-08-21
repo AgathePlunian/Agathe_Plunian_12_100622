@@ -25,6 +25,7 @@ Refer to [this repository](https://github.com/OpenClassrooms-Student-Center/P9-f
 ### 1.1. Back-end
 
 You need to start the application server first.  
+  - `yarn start`
 Refer to [this repository](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard/blob/master/README.md) to start back-end server
 
 ### 1.2. Front-end

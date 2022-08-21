@@ -38,12 +38,12 @@ function Dashboard() {
     <div className="main-dashboard">
       <div className="container container-lg">
         <div className='dashboard-header'>     
-          {userSessions.error && returnContent(userSessions.error , <HelloUser result = {userInfos} ></HelloUser>)}    
+          {userSessions.error && returnContent(userSessions.error , <HelloUser result = {userInfos.result} ></HelloUser>)}    
         </div>
 
         <div className="datas-container">       
           <div className="charts-container">
-            <div className="chart-activity">
+            <div className="bar chart chart-activity">
               {userActivities.error && returnContent(userActivities.error , <BarChartActivities result = {userActivities.result} ></BarChartActivities>)}
             </div> 
 
@@ -64,7 +64,7 @@ function Dashboard() {
           </div>
               
           <div className="aside-datas">
-            {userInfos.error && returnContent(userInfos.error, <DataCard name="Calories" unit="kCal" result = {userInfos.result} icon= {energy} ></DataCard>)}
+            {userInfos.error && returnContent(userInfos.error, <DataCard name="Calories" unit="kCal" result = {userInfos.result} icon={energy} ></DataCard>)}
 
             {userInfos.error && returnContent(userInfos.error, <DataCard name="Proteines" unit="g" result = {userInfos.result} icon={chicken} ></DataCard>)}
 

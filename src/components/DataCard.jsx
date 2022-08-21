@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 /**
- * Render data card
+ * Render data card with data key
  * @param {string} name
  * @param {string} unit
  * @param {string} value

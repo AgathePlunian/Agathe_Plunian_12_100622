@@ -3,8 +3,8 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
 import PropTypes from 'prop-types'
 
 /**
- * Render Pie Chart
- * @param {Object} value
+ * RadarChart construction with recharts components
+ * @param {Object} data
  * @returns {ReactElement}
  */
 
@@ -19,7 +19,6 @@ import PropTypes from 'prop-types'
   return (
     <ResponsiveContainer width="100%" height="100%">
       <RadarChart 
-        
         cx={'50%'}
         cy={'50%'}
         outerRadius="60%" 
