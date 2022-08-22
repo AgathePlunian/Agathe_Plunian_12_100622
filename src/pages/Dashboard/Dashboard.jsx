@@ -16,10 +16,19 @@ import burger from "../../assets/img/burger.svg";
 function Dashboard() {
 
   const userId = useParams().id;
+
+// MOCKED STORE
+  /* const baseURL = ('../mockedStore/' + userId  + '/mainData.json');
+	const SessionsURL = ('../mockedStore/' + userId  + '/averageSessionData.json');
+	const ActivityURL  = ('../mockedStore/' + userId  + '/activityData.json');
+	const PerformanceURL  = ('../mockedStore/' + userId  + '/performanceData.json');
+ */
+
+  //API DATA
   const baseURL =`http://localhost:3000/user/${userId}`;
   const ActivityURL = `http://localhost:3000/user/${userId}/activity`;
   const SessionsURL = `http://localhost:3000/user/${userId}/average-sessions`;
-  const PerformanceURL = `http://localhost:3000/user/${userId}/performance`;
+  const PerformanceURL = `http://localhost:3000/user/${userId}/performance`; 
   
   let userInfos = UseFetch(baseURL);
   let userActivities = UseFetch(ActivityURL);
@@ -43,7 +52,7 @@ function Dashboard() {
 
         <div className="datas-container">       
           <div className="charts-container">
-            <div className="bar chart chart-activity">
+            <div className="barchart chart-activity">
               {userActivities.error && returnContent(userActivities.error , <BarChartActivities result = {userActivities.result} ></BarChartActivities>)}
             </div> 
 

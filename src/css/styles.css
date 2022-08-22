@@ -132,6 +132,7 @@ img {
   background-color: #FFF;
   border-radius: 6px;
   padding: 16px;
+  cursor: pointer;
 }
 .aside-bar .aside-icon + .aside-icon {
   margin-top: 20px;

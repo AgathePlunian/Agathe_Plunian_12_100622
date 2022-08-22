@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
  * Render data card with data key
  * @param {string} name
  * @param {string} unit
- * @param {string} value
+ * @param {string} data
  * @param {string} img
  * @returns {ReactElement}
  */
@@ -44,8 +44,9 @@ function DataCard({name, unit, icon, result}) {
 }
 
 DataCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  unit: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  unit: PropTypes.string,
+  icon: PropTypes.string,
 };
+
 export default DataCard;

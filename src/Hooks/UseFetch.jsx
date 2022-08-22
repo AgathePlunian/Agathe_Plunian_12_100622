@@ -12,6 +12,7 @@ function UseFetch(URL) {
       
       .then((response) => {
         setData(response.data);
+        
         setError("false")
       })
       
@@ -25,8 +26,6 @@ function UseFetch(URL) {
     }
     
     getData()
-
-   
 
   }, [URL])
 

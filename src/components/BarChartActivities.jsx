@@ -4,19 +4,19 @@ import PropTypes from 'prop-types'
 
 /**
  * BarChart construction with recharts components
- * @param {object} value
+ * @param {object} data
  * @returns {ReactElement}
  */
 
-function BarChartActivities({result}) {
+function BarChartActivities({result}) { 
  //Custom tooltip
   function CustomTooltip({ payload, active }) {
     const tool2 = (payload, active) => {
         if (active && payload) {
         return (
             <div className='tooltipChart'>
-            <p className='tooltipLineChart '>{`${payload[0].value}kg`}</p>
-            <p className='tooltipLineChart '>{`${payload[1].value}Kcal`}</p>
+              <p className='tooltipLineChart '>{`${payload[0].value}kg`}</p>
+              <p className='tooltipLineChart '>{`${payload[1].value}Kcal`}</p>
             </div>
         );
       }
